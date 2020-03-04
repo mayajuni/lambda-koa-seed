@@ -1,0 +1,27 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "src/router/**/*.doc.ts",
+      "node_modules/**"
+    ]
+  },
+  "rules": {
+    "variable-name": false,
+    "member-ordering": false,
+    "no-var-requires": false,
+    "quotemark": [true, "single"],
+    "indent": [true, "spaces", 4],
+    "interface-name": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "no-consecutive-blank-lines": false,
+    "member-access": [true, "no-public"],
+    "no-console": false,
+    "no-shadowed-variable": false,
+    "no-unused-expression": false
+  }
+}
