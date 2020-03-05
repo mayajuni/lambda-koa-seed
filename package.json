@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "serverless offline start --apiKey any-pregenerated-key",
+    "serve": "sls offline start --stage dev --apiKey any-pregenerated-key",
     "deploy:dev": "sls deploy --stage dev",
     "deploy:prod": "sls deploy --stage prod"
   },
@@ -23,6 +23,7 @@
     "@types/sequelize": "^4.28.8",
     "serverless": "^1.65.0",
     "serverless-domain-manager": "^3.3.1",
+    "serverless-offline": "^5.12.1",
     "serverless-webpack": "^5.3.1",
     "ts-loader": "^6.2.1",
     "tslint": "^6.0.0",
@@ -36,9 +37,12 @@
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.2.1",
     "koa-swagger-decorator": "^1.6.1",
+    "pg": "^7.18.2",
+    "pg-hstore": "^2.3.3",
     "sequelize": "^5.21.5",
     "sequelize-typescript": "^1.1.0",
     "serverless-http": "^2.3.2",
-    "source-map-support": "^0.5.16"
+    "source-map-support": "^0.5.16",
+    "typedi": "^0.8.0"
   }
 }

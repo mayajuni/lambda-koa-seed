@@ -1,5 +1,5 @@
-import { SwaggerRouter } from 'koa-swagger-decorator';
 import { resolve } from 'path';
+import { SwaggerRouter } from 'koa-swagger-decorator/dist';
 
 const router: SwaggerRouter | any = new SwaggerRouter();
 router.mapDir(resolve(__dirname));

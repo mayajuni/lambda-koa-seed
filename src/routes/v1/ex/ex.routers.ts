@@ -1,7 +1,7 @@
-import { body, request, responses, summary, tags } from "koa-swagger-decorator/dist";
-import { Context } from "koa";
-import { constants } from "http2";
-import { HiBodySchema, HiResponseSchema } from "./ex.interface";
+import { body, request, responses, summary, tags } from 'koa-swagger-decorator/dist';
+import { Context } from 'koa';
+import { constants } from 'http2';
+import { HiBodySchema, HiResponseSchema } from './ex.interface';
 
 const ConsoleTag = tags(['Console']);
 

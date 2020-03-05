@@ -1,4 +1,4 @@
-import { constants } from "http2";
+import { constants } from 'http2';
 
 export const HiBodySchema = {
     name: {
