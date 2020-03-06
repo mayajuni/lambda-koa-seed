@@ -26,15 +26,9 @@
     "@types/sequelize": "^4.28.8",
     "serverless": "^1.65.0",
     "serverless-domain-manager": "^3.3.1",
-    "serverless-offline": "^5.12.1",
-    "serverless-webpack": "^5.3.1",
     "ts-loader": "^6.2.1",
     "tslint": "^6.0.0",
-    "tslint-webpack-plugin": "^2.1.0",
-    "typescript": "^3.8.3",
-    "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-node-externals": "^1.7.2"
+    "typescript": "^3.8.3"
   },
   "dependencies": {
     "jsonwebtoken": "^8.5.1",
