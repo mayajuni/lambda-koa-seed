@@ -1,14 +1,17 @@
 import { resolve } from 'path';
 import { SwaggerRouter } from 'koa-swagger-decorator/dist';
 
+import dd from './ex/ex.routers';
+
 const router: SwaggerRouter | any = new SwaggerRouter();
+
 router.mapDir(resolve(__dirname));
 
 router.swagger({
     title: 'seed',
     description: 'seed',
     version: '0.1',
-    prefix: '/routes/v1',
+    prefix: '/api/v1',
     swaggerHtmlEndpoint: '/docs',
     swaggerJsonEndpoint: '/json',
     swaggerOptions: {

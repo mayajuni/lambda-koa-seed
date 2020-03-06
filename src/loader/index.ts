@@ -1,4 +1,4 @@
-import * as Koa from 'koa';
+import Koa from 'koa';
 import koaLoader from './koa.loader';
 import errorLoader from './error.loader';
 

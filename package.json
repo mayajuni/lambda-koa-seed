@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "sls offline start --stage dev --apiKey any-pregenerated-key",
+    "serve": "serverless offline start --apiKey any-pregenerated-key",
+    "serve3": "webpack --watch --env.NODE_ENV=local",
+    "serve2": "nodemon './.webpack/main.js' --watch './.webpack'",
     "deploy:dev": "sls deploy --stage dev",
-    "deploy:prod": "sls deploy --stage prod"
+    "deploy:prod": "sls deploy --stage prod",
+    "lint": "tslint --config tslint.json --project ./ --format codeFrame --fix"
   },
   "repository": {
     "type": "git",
@@ -30,6 +33,7 @@
     "tslint-webpack-plugin": "^2.1.0",
     "typescript": "^3.8.3",
     "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {

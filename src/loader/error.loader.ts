@@ -1,4 +1,4 @@
-import * as Koa from 'koa';
+import Koa from 'koa';
 import { constants } from 'http2';
 import { Context } from 'koa';
 

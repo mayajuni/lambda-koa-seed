@@ -7,6 +7,7 @@ plugins:
 provider:
   name: aws
   stage: ${opt:stage, 'dev'}
+  environment: ${file(./environments/env.${self:provider.stage}.yml):environment}
   timeout: 30
   runtime: nodejs12.x
 

@@ -1,5 +1,5 @@
-import * as Koa from 'koa';
-import * as bodyParser from 'koa-bodyparser';
+import Koa from 'koa';
+import bodyParser from 'koa-bodyparser';
 import { constants } from 'http2';
 import router from '../routes';
 import { Context } from 'koa';

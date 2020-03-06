@@ -3,12 +3,12 @@ import { Context } from 'koa';
 import { constants } from 'http2';
 import { HiBodySchema, HiResponseSchema } from './ex.interface';
 
-const ConsoleTag = tags(['Console']);
+const ConsoleTag = tags(['Ex']);
 
-export class ExRouters {
+export default class ExRouters {
     @ConsoleTag
-    @request('GET', '/ex')
-    @summary('앱 추가')
+    @request('get', '/ex')
+    @summary('서머리')
     @body(HiBodySchema)
     @responses(HiResponseSchema)
     static async hiWorld({body, status, validatedBody}: Context) {
