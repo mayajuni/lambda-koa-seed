@@ -1,8 +1,7 @@
 service: itamgames
 
 plugins:
-  - serverless-offline
-  - serverless-webpack
+  - serverless-plugin-typescript
 
 provider:
   name: aws

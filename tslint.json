@@ -10,10 +10,14 @@
     ]
   },
   "rules": {
+    "class-name": true,
     "variable-name": false,
     "member-ordering": false,
     "no-var-requires": false,
+    "no-empty": true,
+    "no-eval": true,
     "quotemark": [true, "single"],
+    "semicolon": true,
     "indent": [true, "spaces", 4],
     "interface-name": false,
     "ordered-imports": false,
@@ -22,6 +26,11 @@
     "member-access": [true, "no-public"],
     "no-console": false,
     "no-shadowed-variable": false,
-    "no-unused-expression": false
+    "no-unused-expression": false,
+    "curly": true,
+    "eofline": true,
+    "forin": true,
+    "label-position": true,
+    "max-line-length": [true, 140]
   }
 }

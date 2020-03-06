@@ -28,4 +28,4 @@ export default (app: Koa) => {
             console.log(log);
         }
     });
-}
+};

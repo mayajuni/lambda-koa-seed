@@ -11,4 +11,4 @@ export default () => {
     errorLoader(app);
 
     return app;
-}
+};

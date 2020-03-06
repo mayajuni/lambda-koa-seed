@@ -20,4 +20,4 @@ export default (app: Koa) => {
     });
 
     app.use(router.routes());
-}
+};

@@ -1,8 +1,6 @@
 import { resolve } from 'path';
 import { SwaggerRouter } from 'koa-swagger-decorator/dist';
 
-import dd from './ex/ex.routers';
-
 const router: SwaggerRouter | any = new SwaggerRouter();
 
 // router.map(dd);

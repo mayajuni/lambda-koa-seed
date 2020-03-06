@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "serverless offline start --apiKey any-pregenerated-key",
-    "serve3": "webpack --watch --env.NODE_ENV=local",
-    "serve2": "nodemon './.webpack/main.js' --watch './.webpack'",
+    "serve": "gulp serve",
     "deploy:dev": "sls deploy --stage dev",
     "deploy:prod": "sls deploy --stage prod",
     "lint": "tslint --config tslint.json --project ./ --format codeFrame --fix"
@@ -20,15 +18,29 @@
   "homepage": "https://github.com/mayajuni/lambda-koa-seed#readme",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.46",
+    "@types/gulp": "^4.0.6",
+    "@types/gulp-cached": "0.0.31",
+    "@types/gulp-nodemon": "0.0.32",
+    "@types/gulp-tslint": "^4.2.0",
+    "@types/gulp-typescript": "^2.13.0",
     "@types/koa": "^2.11.2",
     "@types/koa-bodyparser": "^4.3.0",
     "@types/node": "^13.7.7",
     "@types/sequelize": "^4.28.8",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-cached": "^1.1.1",
+    "gulp-nodemon": "^2.5.0",
+    "gulp-tslint": "^8.1.4",
+    "gulp-typescript": "^6.0.0-alpha.1",
     "serverless": "^1.65.0",
     "serverless-domain-manager": "^3.3.1",
+    "serverless-plugin-typescript": "^1.1.9",
     "ts-loader": "^6.2.1",
+    "ts-node": "^8.6.2",
     "tslint": "^6.0.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "yenv": "^2.1.1"
   },
   "dependencies": {
     "jsonwebtoken": "^8.5.1",

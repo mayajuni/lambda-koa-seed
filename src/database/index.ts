@@ -22,7 +22,7 @@ export default class Database {
         });
 
         try {
-            await sequelize.authenticate()
+            await sequelize.authenticate();
         } catch (e) {
             await sequelize.sync();
         }
